@@ -22,8 +22,25 @@ let Dojornodoj1= await ti.prompt("do they have a Dojutsu")
           let rook1 = await ti.prompt ("Is your character part of the Rookie 9?")
           if(rook1.toLocaleLowerCase()==="yes"){ ti.output ("Your character is Sasuke");
           } else if (rook1.toLocaleLowerCase()==="no") ti.output ("Your character is Itachi");
+        } else if (uchiha1.toLocaleLowerCase()==="no"){
+        }let hyuga= await ti.prompt ("do they have the Byakugan")
+        if (hyuga.toLocaleLowerCase()==="yes"){
+          ti.output("Your character is Neji");
+        } else if (hyuga.toLocaleLowerCase()=== "no") {
+          ti.output("Your character is Kakashi");
         }
+      } else if (ognoog1.toLocaleLowerCase()==="ship"||ognoog1.toLocaleLowerCase()==="shippuden"){
+        let uchiha2 = await ti.prompt ("Is your character part of the Uchiha")
+        if (uchiha2.toLocaleLowerCase()==="yes"){ ti.output ("Your character is Tobi/Obito")
+        } else if (uchiha2.toLocaleLowerCase()==="no") ti.output ("Your character is Pain/Nagato")//ai helped us with a minor mistake after the to.localelowercase -->()
       }
+    } else if (Dojornodoj1.toLocaleLowerCase()==="no"){
+      let ognoog2= await ti.prompt ("Are they from OG or Ship")
+      if(ognoog2.toLocaleLowerCase()=== "og"){
+       let sensei1= await ti.prompt ("Is your a sensei (includes Konohamaru)?")
+        if (sensei1.toLocaleLowerCase()==="yes"){
+         let perv= await ti.prompt ("Is your character a pervy old man (or a pervy young man)?")
+      } 
     }
   }
 } else if(maincast.toLocaleLowerCase()=== "no") {
