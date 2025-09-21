@@ -37,12 +37,35 @@ let Dojornodoj1= await ti.prompt("do they have a Dojutsu")
     } else if (Dojornodoj1.toLocaleLowerCase()==="no"){
       let ognoog2= await ti.prompt ("Are they from OG or Ship")
       if(ognoog2.toLocaleLowerCase()=== "og"){
-       let sensei1= await ti.prompt ("Is your a sensei (includes Konohamaru)?")
+       let sensei1= await ti.prompt ("Is your character a sensei (includes Konohamaru)?")
         if (sensei1.toLocaleLowerCase()==="yes"){
          let perv= await ti.prompt ("Is your character a pervy old man (or a pervy young man)?")
+         if (perv.toLocaleLowerCase()==="yes"){
+           let restinpeace= await ti.prompt ("Does your character die?")
+           if (restinpeace.toLocaleLowerCase()==="yes"){ ti.output("Your character is Jiraiya the Gallant")
+           } else ti.output ("Your character is Konohamaru")
+         } else if (perv.toLocaleLowerCase()==="no"){
+          let restinpeace2= await ti.prompt ("Does your character die?")
+          if (restinpeace2.toLocaleLowerCase()==="yes"){ ti.output("Your character is Asumaaaaa (goat)")
+          } else if (restinpeace2.toLocaleLowerCase()==="no"){ ti.output("Your character is Orochimaru")
+          }
+         }
+      } else if (sensei1.toLocaleLowerCase()==="no"){
+        let jinchuriki1= await ti.prompt("Is your character a Jinchuriki?")
+        if (jinchuriki1.toLocaleLowerCase()==="yes"){
+          let hokage1=await ti.prompt("Is your character a Hokage of Konoha?")
+          if (hokage1.toLocaleLowerCase()==="yes"){ ti.output("Your character is Naruto Uzumaki")
+          } else if (hokage1.toLocaleLowerCase()==="no"){ ti.output ("Your character is Gaara of the Sand")
+        }
+        } else if (jinchuriki1.toLocaleLowerCase()==="no"){
+          let taijutsu1= await ti.prompt("Does your character use taijutsu?")
+          if (taijutsu1.toLocaleLowerCase()==="yes"){ ti.output("Your character is Rock Lee")
+          } else if (taijutsu1.toLocaleLowerCase()==="no"){ ti.output("Your character is THE GOAT Shikamaru")
+        }
+        }
       } 
     }
   }
 } else if(maincast.toLocaleLowerCase()=== "no") {
 
-}
+}}
