@@ -360,8 +360,7 @@ let Dojornodoj3= await ti.prompt("Does your character have Dojutsu?");
               } else if (evilman.toLocaleLowerCase()==="no"){ ti.output("Your character is Minato Namikaze");
             }
             }
-          }
-        } else if (sensei2.toLocaleLowerCase()==="no"){
+          } else if (previoushokage.toLocaleLowerCase()==="no"){
           let darui= await ti.prompt("Is your character Darui?");
           if (darui.toLocaleLowerCase()==="yes"){ ti.output("Your character is Darui");
           } else if (darui.toLocaleLowerCase()==="no"){
@@ -398,5 +397,6 @@ let Dojornodoj3= await ti.prompt("Does your character have Dojutsu?");
     } else if (taka.toLocaleLowerCase()=="no"){ ti.output("Your character is Konan of the Akatsuki");
     }
   }
+}
 }
 }
