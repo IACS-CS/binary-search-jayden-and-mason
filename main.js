@@ -6,6 +6,7 @@ let app = document.querySelector("#app");
 let ti = new TextInterface(app, "Guess my naruto charecter");
 let name = await ti.prompt("What is your name?");
 ti.output("Hello, " + name);
+if (name.toLocaleLowerCase()==="the sage of six paths"||name.toLocaleLowerCase()==="sage of six paths") ti.output("Sage of the Six Paths thank you for being the goat and starting Ninshu");
 ti.output("Welcome to the Naruto character guessing game!");
 ti.output("you will pick a charecter from the list below and I will try to guess it");
 // add image of naruto charecters and add a list of thier names 
@@ -104,7 +105,47 @@ let Dojornodoj3= await ti.prompt("Does your character have Dojutsu?")
           } else if (rinnegan.toLocaleLowerCase()==="no"){ ti.output("Your character is Fugaku Uchiha")
         } 
         }
-      } else if (uchiha3.toLocaleLowerCase()==="no")
+      } else if (uchiha3.toLocaleLowerCase()==="no"){
+        let hyugaside= await ti.prompt("Is your character part of the Hyuga Clan?")
+        if (hyugaside.toLocaleLowerCase()==="yes"){
+          let father= await ti.prompt("Is your character a father?")
+          if (father.toLocaleLowerCase()==="yes"){ ti.output("Your character is Hiashi Hyuga")
+          } else if (father.toLocaleLowerCase()==="no"){ ti.output("Your character is Tokuma Hyuga")
+        }
+        } else if (hyugaside.toLocaleLowerCase()==="no"){
+          let Otsutsuki1= await ti.prompt("Is your character part of the Ōtsutsuki Clan?")
+          if (Otsutsuki1.toLocaleLowerCase()==="yes"){
+            let sharbyak= await ti.prompt("Does your character have the Sharingan or the Byakugan?")
+            if (sharbyak.toLocaleLowerCase()==="sharingan"){ ti.output("Your character is Indra Ōtsutsuki")
+            } else if (sharbyak.toLocaleLowerCase()==="byakugan"){ ti.output("Your character is Hamura Ōtsutsuki")
+          }
+            }
+        }
+      }
+    } else if (Dojornodoj3.toLocaleLowerCase()==="no"){
+      let akatsuki1= await ti.prompt("Is your character part of the Akatsuki?")
+      if (akatsuki1.toLocaleLowerCase()==="yes"){
+        let zomcomandzetsu= await ti.prompt("Is your character part of the 'Zombie Combo' (Hidan and Kakuzu) or are they Zetsu? (either one is a yes)")
+        if (zomcomandzetsu.toLocaleLowerCase()==="yes"){
+          let zomcom= await ti.prompt("Is your character part of the Zombie Combo")
+          if (zomcom.toLocaleLowerCase()==="yes"){
+            let jashin= await ti.prompt("Is your character a follower of Jashin?")
+            if (jashin.toLocaleLowerCase()==="yes"){ ti.output("Your character is Hidan")
+            } else if (jashin.toLocaleLowerCase()==="no"){ ti.output("Your character is Kakazu (the money launderer)")
+          }
+        } else if (zomcom.toLocaleLowerCase()==="no"){ ti.output("Your character is Zetsu (White+Black Zetsu Akatsuki Form)")
+        }
+        } else if (zomcomandzetsu.toLocaleLowerCase()==="no"){
+          let artduo= await ti.prompt("Is your character part of the art duo (Sasori and Deidara)?")
+          if (artduo.toLocaleLowerCase()==="yes"){
+            let explosion= await ti.prompt("Does your character think art is an explosion?")
+            if (explosion.toLocaleLowerCase()==="yes"){ ti.output("Your character is Deidara")
+            } else if (explosion.toLocaleLowerCase()==="no"){ ti.output("Your character is Sasori (the bum who lost to Sakura because of plot armor hahahaaa)")
+          }
+          } else if (artduo.toLocaleLowerCase()==="no"){ ti.output("Your character is Kisame Hoshigaki (Might Guy doesnt even remember bro lol)")
+          }
+        }
+      }
     }
   }
 }
