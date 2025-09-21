@@ -64,8 +64,47 @@ let Dojornodoj1= await ti.prompt("do they have a Dojutsu")
         }
         }
       } 
+    } else if (ognoog2.toLocaleLowerCase()==="ship"||ognoog2.toLocaleLowerCase()==="shippuden"){ ti.output("Your character is Sai the PainterBoy")
     }
   }
+} else if (malefemale1.toLocaleLowerCase()==="female"){
+  let dojornodoj2= await ti.prompt ("Does your character have dojutsu?")
+  if (dojornodoj2.toLocaleLowerCase()==="yes"){ ti.output("Your character is Hinata Hyuga")
+  } else if (dojornodoj2.toLocaleLowerCase()==="no"){
+    let ognoog3= await ti.prompt("Is your character from OG Naruto or Shippuden?")
+    if (ognoog3.toLocaleLowerCase()==="OG"){
+      let Team7and10= await ti.prompt("Is your character from team 10 or team 7? (yes or no)")
+      if (Team7and10.toLocaleLowerCase()==="yes"){
+        let uselessbum= await ti.prompt("Is your character completely useless for the whole series?")
+        if (uselessbum.toLocaleLowerCase()==="yes"){ ti.output("Your character is Sakura")
+        } else if (uselessbum.toLocaleLowerCase()==="no"){ ti.output("Your character is Ino Yamanaka")
+        }
+      } else if (Team7and10.toLocaleLowerCase()==="no"){
+        let sandvillage= await ti.prompt ("Are they from the Sunagakure (Sand Village)?")
+        if (sandvillage.toLocaleLowerCase()==="yes"){ ti.output("Your character is Temari")
+        } else if (sandvillage.toLocaleLowerCase()==="no"){ ti.output ("Your character is the character who got less screen time than a literal tree, Tenten")
+      }
+      }
+    } else if (ognoog3.toLocaleLowerCase()==="Ship"||ognoog3.toLocaleLowerCase()==="Shippuden"){ ti.output("Your character is Kushina Uzumaki")
+    }
+}
+}
 } else if(maincast.toLocaleLowerCase()=== "no") {
-
-}}
+ let malefemale2= await ti.prompt("Is your character male or female?")
+  if(malefemale2.toLocaleLowerCase()==="male"){
+let Dojornodoj3= await ti.prompt("Does your character have Dojutsu?")
+  if(Dojornodoj3.toLocaleLowerCase()==="yes"){
+      let uchiha3= await ti.prompt("Is your character from the Uchiha Clan?")
+      if(uchiha3.toLocaleLowerCase()==="yes"){
+        let bestgenjutsu= await ti.prompt("Is your character the best genjutsu user of all time?")
+        if (bestgenjutsu.toLocaleLowerCase()==="yes"){ ti.output("Your character is Shisui Uchiha the Teleporter (and the one with Kotoamatsukami)")
+        } else if (bestgenjutsu.toLocaleLowerCase()==="no"){
+          let rinnegan= await ti.prompt("Does your character possess the Rinnegan?")
+          if (rinnegan.toLocaleLowerCase()==="yes"){ ti.output("Your character is Madara Uchiha, one of the founders of Konoha")
+          } else if (rinnegan.toLocaleLowerCase()==="no"){ ti.output("Your character is Fugaku Uchiha")
+        } 
+        }
+      } else if (uchiha3.toLocaleLowerCase()==="no")
+    }
+  }
+}
