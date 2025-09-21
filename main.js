@@ -145,7 +145,65 @@ let Dojornodoj3= await ti.prompt("Does your character have Dojutsu?")
           } else if (artduo.toLocaleLowerCase()==="no"){ ti.output("Your character is Kisame Hoshigaki (Might Guy doesnt even remember bro lol)")
           }
         }
-      }
+      } else if (akatsuki1.toLocaleLowerCase()==="no"){
+        let sensei2= await ti.prompt("Is your character a Sensei in Konoha?")
+        if (sensei2.toLocaleLowerCase()==="yes"){
+          let academy1= await ti.prompt("Has your character taught at the Konoha academy?")
+          if (academy1.toLocaleLowerCase()==="yes"){ ti.output("Your character is Iruka")
+          } else if (adacemy1.toLocaleLowerCase()==="no"){ ti.output("Your character is Might Guy")
+        }
+        } else if (sensei2.toLocaleLowerCase()==="no"){
+          let previoushokage= await ti.prompt("Is your character a previous Hokage?")
+          if (previoushokage.toLocaleLowerCase()==="yes"){
+            let senjuclan= await ti.prompt("Is your character part of the Senju Clan?")
+            if (senjuclan.toLocaleLowerCase()==="yes"){
+              let uchihahater= await ti.prompt("Does your character hate the Uchiha Clan?")
+              if (uchihahater.toLocaleLowerCase()==="yes"){ ti.output("Your character is Tobirama Senju")
+              } else if (uchihahater.toLocaleLowerCase()==="no"){ ti.output("Your character is Hashirama Senju")
+            }
+            } else if (senjuclan.toLocaleLowerCase()==="no"){
+              let evilman= await ti.prompt("Is your character the most evil person in the entire series?")
+              if (evilman.toLocaleLowerCase()==="yes"){ ti.output("Your character is Danzo")
+              } else if (evilman.toLocaleLowerCase()==="no"){ ti.output("Your character is Minato Namikaze")
+            }
+            }
+          }
+        } else if (sensei2.toLocaleLowerCase()==="no"){
+          let darui= await ti.prompt("Is your character Darui?")
+          if (darui.toLocaleLowerCase()==="yes"){ ti.output("Your character is Darui")
+          } else if (darui.toLocaleLowerCase()==="no"){
+            let omoi= await ti.prompt("Is your character Omoi?")
+            if (omoi.toLocaleLowerCase()==="yes"){ ti.output("Your character is Omoi")
+            } else if (omoi.toLocaleLowerCase()==="no"){ 
+              let killerbee= await ti.prompt("Is your character Killer Bee?")
+              if (killerbee.toLocaleLowerCase()==="yes"){ ti.output("Your character is Killer Bee")
+              } else if (killerbee.toLocaleLowerCase()==="no"){ ti.output("Your character is Zabuza")
+            }
+          }
+          }
+        }
     }
   }
+} else if (malefemale2.toLocaleLowerCase()==="female"){
+  let dojornodoj4= await ti.prompt("Does your character have Dojutsu?")
+  if (dojornodoj4.toLocaleLowerCase()==="yes"){
+    let Otsutsuki2= await ti.prompt("Is your character part of the Ōtsutsuki Clan?")
+    if (Otsutsuki2.toLocaleLowerCase()==="yes"){ ti.output("Your character is Kaguya Ōtsutsuki")
+    } else if (Otsutsuki2.toLocaleLowerCase()==="no"){ ti.output("Your character is Hanabi Hyuga")
+  }
+  } else if (dojornodoj4.toLocaleLowerCase()==="no"){
+    let ognoog4= await ti.prompt("Is your character from OG Naruto or Shippuden")
+    if (ognoog4.toLocaleLowerCase()==="og"){
+      let hokage2= await ti.prompt("Is your character a former Hokage?")
+      if (hokage2.toLocaleLowerCase()==="yes"){ ti.output("Your character is Tsunade")
+      } else if (hokage2.toLocaleLowerCase()==="no"){ ti.output("Your character is Haku (haha Haku is actually a boy I tricked you)")
+    }
+    } else if (ognoog4.toLocaleLowerCase()==="ship"||ognoog4.toLocaleLowerCase()==="shippuden"){
+      let taka= await ti.prompt("Are they a part of the group The Taka?")
+      if (taka.toLocaleLowerCase()==="yes"){ ti.output("Your character is Karin")
+      } //copilot helped fix an error with curly brackets
+    } else if (taka.toLocaleLowerCase()=="no"){ ti.output("Your character is Konan of the Akatsuki");
+    }
+  }
+}
 }
