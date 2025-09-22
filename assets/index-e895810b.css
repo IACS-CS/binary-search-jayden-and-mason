@@ -7,3 +7,10 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+
+.output img {
+  animation-duration: 10ms !important;
+}
+/* 
+Mr Hinkle helped us with the image import speed
+*/
