@@ -9,6 +9,7 @@ ti.output("Hello, " + name);
 if (name.toLocaleLowerCase()==="the sage of six paths"||name.toLocaleLowerCase()==="sage of six paths") ti.output("Sage of the Six Paths thank you for being the goat and starting Ninshu");
 ti.output("Welcome to the Naruto character guessing game!");
 ti.output("you will pick a charecter from the list below and I will try to guess it");
+ti.output("Sasuke, Itachi, Neji, Kakashi, Tobi/Obito, Pain/Nagato, Jiraiya the Gallant, Konohamaru, Asuma, Orochimaru, Naruto Uzumaki, Gaara of the Sand, Rock Lee, Shikamaru,Sai, Hinata Hyuga, Sakura, Ino Yamanaka, Temari, Tenten, Kushina Uzumaki, Shisui Uchiha the Teleporter, Madara Uchiha, Fugaku Uchiha, Hiashi Hyuga, Tokuma Hyuga, Indra Ōtsutsuki, Hamura Ōtsutsuki, Hidan, Kakazu, Zetsu, Deidara, Sasori, Kisame Hoshigaki, Iruka, Might Guy, Tobirama Senju, Hashirama Senju, Danzo, Minato Namikaze, Darui, Omoi, Killer Bee, Zabuza, Kaguya Ōtsutsuki, Hanabi Hyuga, Tsunade, Haku, Karin, Konan")
 // add image of naruto charecters and add a list of thier names 
 let maincast = await ti.prompt("are they part of the main cast?")
 if(maincast.toLocaleLowerCase()=== "yes"){
