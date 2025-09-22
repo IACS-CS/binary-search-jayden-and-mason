@@ -563,4 +563,4 @@ while (playing) {
   ti.output("do you wanna play again");
   playing = await ti.readYesOrNo("play again");
 }
-ti.output("thank you for playing our game");
+ti.output("thank you for playing our game" + name );
