@@ -9,7 +9,7 @@ body {
 }
 
 .output img {
-  animation-duration: 10ms !important;
+  animation-duration: 50ms !important;
 }
 /* 
 Mr Hinkle helped us with the image import speed

@@ -3,7 +3,7 @@ import { TextInterface } from "text-interface";
 
 let app = document.querySelector("#app");
 // Create a new "Text Interface"
-let ti = new TextInterface(app, "Guess my naruto charecter");
+let ti = new TextInterface(app, "I Will Guess Your Naruto Character");
 let playing = true;
 
 let name = await ti.prompt("What is your name?");
@@ -243,7 +243,7 @@ while (playing) {
             } else if (rook1.toLocaleLowerCase() === "no")
               ti.output("Your character is Itachi");
           } else if (uchiha1.toLocaleLowerCase() === "no") {
-            let hyuga = await ti.prompt("do they have the Byakugan");
+            let hyuga = await ti.prompt("Does your character have the Byakugan?");
             if (hyuga.toLocaleLowerCase() === "yes") {
               ti.output("Your character is Neji");
             } else if (hyuga.toLocaleLowerCase() === "no") {
@@ -254,14 +254,14 @@ while (playing) {
           ognoog1.toLocaleLowerCase() === "ship" ||
           ognoog1.toLocaleLowerCase() === "shippuden"
         ) {
-          let uchiha2 = await ti.prompt("Is your character part of the Uchiha");
+          let uchiha2 = await ti.prompt("Is your character part of the Uchiha?");
           if (uchiha2.toLocaleLowerCase() === "yes") {
             ti.output("Your character is Tobi/Obito");
           } else if (uchiha2.toLocaleLowerCase() === "no")
             ti.output("Your character is Pain/Nagato"); //ai helped us with a minor mistake after the to.localelowercase -->()
         }
       } else if (Dojornodoj1.toLocaleLowerCase() === "no") {
-        let ognoog2 = await ti.prompt("Are they from OG or Ship");
+        let ognoog2 = await ti.prompt("Are they from OG or Shippuden?");
         if (ognoog2.toLocaleLowerCase() === "og") {
           let sensei1 = await ti.prompt(
             "Is your character a sensei (includes Konohamaru)?"
@@ -563,4 +563,5 @@ while (playing) {
   ti.output("do you wanna play again");
   playing = await ti.readYesOrNo("play again");
 }
-ti.output("thank you for playing our game" + name );
+ti.output("Thank you for playing our game " + name );
+ti.output("Remember to always follow the creed of ninshu");
