@@ -9,8 +9,56 @@ ti.output("Hello, " + name);
 if (name.toLocaleLowerCase()==="the sage of six paths"||name.toLocaleLowerCase()==="sage of six paths") ti.output("Sage of the Six Paths thank you for being the goat and starting Ninshu");
 ti.output("Welcome to the Naruto character guessing game!");
 ti.output("you will pick a charecter from the list below and I will try to guess it");
-ti.output("Sasuke, Itachi, Neji, Kakashi, Tobi/Obito, Pain/Nagato, Jiraiya the Gallant, Konohamaru, Asuma, Orochimaru, Naruto Uzumaki, Gaara of the Sand, Rock Lee, Shikamaru,Sai, Hinata Hyuga, Sakura, Ino Yamanaka, Temari, Tenten, Kushina Uzumaki, Shisui Uchiha the Teleporter, Madara Uchiha, Fugaku Uchiha, Hiashi Hyuga, Tokuma Hyuga, Indra Ōtsutsuki, Hamura Ōtsutsuki, Hidan, Kakazu, Zetsu, Deidara, Sasori, Kisame Hoshigaki, Iruka, Might Guy, Tobirama Senju, Hashirama Senju, Danzo, Minato Namikaze, Darui, Omoi, Killer Bee, Zabuza, Kaguya Ōtsutsuki, Hanabi Hyuga, Tsunade, Haku, Karin, Konan")
-// add image of naruto charecters and add a list of thier names 
+ti.output("Sasuke"); ti.showImage("https://upload.wikimedia.org/wikipedia/en/4/42/SasukeKishimoto.jpg");
+ti.output("Itachi"); ti.showImage("https://upload.wikimedia.org/wikipedia/en/e/e5/Itachi_Uchiha.jpg");
+ti.output("Neji"); ti.showImage("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStOEzSx_WW1fOk82xwa37PWPo_1vv6IEYqMhZGA3bjkuN91KlAlmqeVscXJ79riqYnnTbUUgnpQp6mysDry7DdWqVag9TFOvh-MwqSw19DdQ")
+ti.output("Kakashi"); ti.showImage
+ti.output("Tobi/Obito");ti
+ti.output("Pain/Nagato");
+ti.output("Jiraiya the Gallant");
+ti.output("Konohamaru");
+ti.output("Asuma");
+ti.output("Orochimaru");
+ti.output("Gaara of the Sand");
+ti.output("Rock Lee");
+ti.output("Shikamaru");
+ti.output("Sai ");
+ti.output("Hinata Hyuga");
+ti.output("Sakura");
+ti.output("Ino Yamanaka");
+ti.output("Temari");
+ti.output("Tenten");
+ti.output("Kushina Uzumaki");
+ti.output("Shisui Uchiha");
+ti.output("Madara Uchiha");
+ti.output("Fugaku Uchiha");
+ti.output("Hiashi Hyuga");
+ti.output("Tokuma Hyuga");
+ti.output("Indra Ōtsutsuki");
+ti.output("Hamura Ōtsutsuki");
+ti.output("Hidan");
+ti.output("Kakazu");
+ti.output("Zetsu");
+ti.output("Deidara");
+ti.output("Sasori");
+ti.output("Kisame Hoshigaki");
+ti.output("Iruka");
+ti.output("Might Guy");
+ti.output("Tobirama Senju");
+ti.output("Hashirama Senju");
+ti.output("Danzo");
+ti.output("Minato Namikaze");
+ti.output("Darui");
+ti.output("Omoi");
+ti.output("Killer Bee");
+ti.output("Zabuza");
+ti.output("Kaguya Ōtsutsuki");
+ti.output("Hanabi Hyuga");
+ti.output("Tsunade");
+ti.output("Haku");
+ti.output("Karin");
+ti.output("Konan");
+// used copilot to tell me how to add images
 let maincast = await ti.prompt("are they part of the main cast?")
 if(maincast.toLocaleLowerCase()=== "yes"){
   let malefemale1= await ti.prompt("are they male or female")
