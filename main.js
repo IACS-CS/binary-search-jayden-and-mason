@@ -25,7 +25,7 @@ ti.output("Shikamaru"); ti.showImage("https://encrypted-tbn1.gstatic.com/images?
 ti.output("Sai "); ti.showImage("https://static.wikia.nocookie.net/naruto/images/0/07/Sai_Infobox.png/revision/latest/scale-to-width-down/300?cb=20180314110836");
 ti.output("Hinata Hyuga"); ti.showImage("https://static.wikia.nocookie.net/naruto/images/9/97/Hinata.png/revision/latest/scale-to-width-down/300?cb=20141010104729");
 ti.output("Sakura"); ti.showImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRwL9xs_0l9lpyYCqVZ7vg-_QF0y49vvPnrvAOMuLipOa9wZTBLlHhcVaduMo1pgY5qD_a9oNIhUCKDX69Z6St4aqdzoO55uXXdmDDC5_7");
-ti.output("Ino Yamanaka"); ti.showImage("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpW2pIq8auNRXTCm4p4FHZAVj1xzPTaaBfzNhLY7opBhVVgjA3EwviW1ElY9eyEWyHLaOQsL0FNb2PBZdbH7DojQLnl5mN0pYXcTg_LQcBDQ");
+ti.output("Ino Yamanaka"); ti.showImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV-NdSsLRUswBzJLKoXmtPLt-Ig36q-X240Q&s");
 //fix image for ino 
 ti.output("Temari"); ti.showImage("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6QfnTe-NBDyL3Yo85ejb1Yzw9GY8WbOxQblyrbVUDjykPfbwXoQw5T58a12mAgiS9fjNhCZim1uHa2rPQlqt_3XWfES_l6l-kZkS3GFua");
 ti.output("Tenten"); ti.showImage("https://static.wikia.nocookie.net/naruto/images/d/da/Tenten_Part_1.png/revision/latest/scale-to-width-down/300?cb=20180510203032");
