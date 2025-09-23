@@ -713,7 +713,8 @@ while (playing) {
             }
           }
         }
-      } else if (malefemale2.toLocaleLowerCase() === "female") {
+      }
+     } else if (malefemale2.toLocaleLowerCase() === "female") {
         let dojornodoj4 = await ti.prompt("Does your character have Dojutsu?");
         if (dojornodoj4.toLocaleLowerCase() === "yes") {
           let Otsutsuki2 = await ti.prompt(
@@ -751,7 +752,7 @@ while (playing) {
             ti.output("Your character is Konan of the Akatsuki");
           }
         }
-      }
+      
     }
   }
   ti.output("do you wanna play again");
